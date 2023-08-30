@@ -1,0 +1,605 @@
+@Muli:'Mulish', sans-serif;
+@blu:#458FF6;
+@drkblu:#233348;
+@blck:#000000;
+@grey:#7D7987;
+@white:#FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main-container {
+    max-width: 1100px;
+    margin: auto;
+    border: 1px solid black;
+
+
+    .head-container {
+        height: 168px;
+        width: 1100px;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            display: flex;
+            align-items: center;
+
+            .T-logo {
+                color: @white;
+                font-family: @Muli;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                background-color: @blu;
+                width: 41px;
+                height: 41px;
+                border-radius: 20.5px;text-align: center;
+                padding: 5px;
+                margin-right: 12px;
+                
+            }
+            .Trafalgar {
+                color: @drkblu;
+                font-family: @Muli;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+            }
+
+        }
+
+        .nav-opts {
+            display: flex;
+            gap: 40px;
+
+            a {
+                text-decoration: none;
+                color: @drkblu;
+                font-family: @Muli;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                opacity: 0.5;
+                &:hover {
+                    color: @drkblu;
+                    opacity: 1;
+                    transform: 0.3s;
+                }
+            }
+        }
+
+    }
+
+
+    .banner-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 192px;
+
+        .content {
+            list-style-type: none;
+            .darkcntnt {
+                color: @blck;
+                font-family: @Muli;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px;
+                margin-bottom: 25px;
+
+            }
+
+            .lightcntnt {
+                color: @grey;
+                font-family: @Muli;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px; 
+                margin-bottom: 45px;
+
+            }
+        }
+
+        .consult-btn {
+            button {
+                padding: 3px 40px;
+                color: @white;
+                font-family: @Muli;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 60px;
+                flex-shrink: 0;
+                border-radius: 55px;
+                background: @blu;
+                border: none;
+                &:hover {
+                    background-color: #0c53b5;
+                    transition: 0.3s;
+                }
+            }      
+
+        }
+    }
+
+
+
+    .ourservice-container {
+        list-style-type: none;
+        margin-bottom: 220px;
+
+        .service {
+            color: @blck;
+            font-family: @Muli;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            text-align: center;
+            margin-bottom: 26px;
+
+        }
+        .line {
+            width: 56px;
+            height: 2px;
+            border-radius: 5px;
+            background: @blck;
+            margin: auto;
+            margin-bottom: 33px;
+            
+        }
+        .service-cntnt {
+            color: @grey;
+            text-align: center;
+            font-family: @Muli;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 30px;
+            margin-bottom: 80px;
+
+        }
+
+        .six-contents {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 24px;
+            row-gap: 29px;
+            margin-bottom: 69px;
+
+            .box {
+                width: 350px;
+                height: 354px;
+                flex-shrink: 0;
+                padding-top: 54px;
+                padding-left: 37px;
+
+                .frame-img {
+                    padding-bottom: 22.41px;
+                }
+
+                .in-box-cntnt {
+                    color: @blck;
+                    font-family: @Muli;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 56px;
+                }
+                .description {
+                    color: @grey;
+                    font-family: @Muli;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 28px;
+                }
+            }
+
+        }
+
+        .learnmore-btn {
+            text-align: center;
+
+            
+            button {
+                color: @blu;
+                font-family: @Muli;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 60px;
+                flex-shrink: 0;
+                border-radius: 55px;
+                border: 1.4px solid @blu;
+                padding: 3px 51px;
+                &:hover {
+                    background-color: @blu;
+                    color: @white;
+                    transition: 0.3s;
+                }
+                
+            }
+        }
+    }
+
+
+    .fourth-container {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 229px;
+        .care-provider {
+            .healthcare {
+                margin-bottom: 26px;
+
+                li {
+                    color: @blck;
+                    font-family: @Muli;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 56px;
+                }
+            }
+            .line2 {
+                width: 56px;
+                height: 2px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: @blck;
+                margin-bottom: 31px;
+            }
+
+            .light-content {
+                color: @grey;
+                font-family: @Muli;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                margin-bottom: 37px;
+            }
+
+            .learn-btn {
+                button {
+                    color: @blu;
+                    font-family: @Muli;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 60px;
+                    flex-shrink: 0;
+                    border-radius: 55px;
+                    border: 1.4px solid @blu;
+                    padding: 3px 51px;
+                    &:hover {
+                        background-color: @blu;
+                        color: @white;
+                        transition: 0.3s;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+
+
+    .fifth-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 266px;
+        .mobile-download {
+            list-style-type: none;
+            .mobile {
+                color: @blck;
+                font-family: @Muli;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px;
+                margin-bottom: 30px;
+            }
+            .line3 {
+                width: 56px;
+                height: 2px;
+                flex-shrink: 0;
+                border-radius: 6px;
+                background: @blck;
+                margin-bottom: 30px;
+
+            }
+
+            .lght-cntnt {
+                color: @grey;
+                font-family: @Muli;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                margin-bottom: 40px;
+            }
+
+            .download-btn {
+                button {
+                    color: @blu;
+                    font-family: @Muli;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 60px;
+                    border-radius: 55px;
+                    border: 1.4px solid @blu;
+                    padding: 3px 51px;
+
+                }
+            }
+        }
+
+    }
+
+    .sixth-container {
+        height: 425px;
+        border-radius: 24px;
+        background: linear-gradient(223deg, #67C3F3 0%, #5A98F2 100%);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
